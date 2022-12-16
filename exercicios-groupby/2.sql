@@ -1,0 +1,1 @@
+SELECT id, COUNT(CASE WHEN "status"='finished' THEN 1 ELSE 0 END) FROM educations GROUP BY id ORDER BY id;
